@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./console_runner-d0a557e5cb67f9cd9bbb9673355c7e8e.js.download"></script><script src="./events_runner-21174b4c7273cfddc124acb0876792e0.js.download"></script><script src="./css_live_reload_init-7618a0de08795409d8f6c9ef6805f7b2.js.download"></script><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/sabahmuhsen/pen/bwOdyV">
+
+
+<style type="text/css" class="cp-pen-styles">body {
+  background-image: url(https://drive.google.com/uc?export=download&id=0B5nBaSvsXWWLUl9MbHdBc19FM0k);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  height: 100vh;
+}
+ul,
+li {
+  font-size: 1.3em;
+  padding: 0.8em;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.exsample{
+  border:5px solid light red;
+}
+.example-card{
+  height:500px;
+  margin:30px;
+     width:500px;
+    background-color: seagreen;
+    opacity: 0.5;
+    border: 1px solid #fff;
+    margin: 0 auto 10px;
+    padding: 5px;
+    color: #fff;
+ }
+.example{
+  height:200px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:base-line;
+  }
+.exsample-card{
+  width:30%;
+}
+.example-card:nth-child(5){
+  width:825px;
+  height:600px;
+}
+.wrapper{
+  max-width:100px;
+  margin:0 auto;
+  padding:50;
+  display:inline;
+}
+
+/*flex code*/
+
+.flex-nav ul{
+  margin:0;
+  padding:0;
+  border:1px solid black;
+  list-style: none;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.flex-nav li{
+  flex:3;
+
+}
+
+.flex-nav .social{
+  flex:1;
+   }
+
+
+/*breakpoint*/
+@media all and (max-width:1000px) {
+  .flex-nav ul{
+    flex-wrap:wrap;
+  }
+
+  .flex-nav li{
+    flex:1 45%;
+  }
+
+
+}
+
+@media all and (max-width:900px) {
+ .flex-nav li{
+    flex-basis:100%;
+  }
+}</style></head><body>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./menu.css">
+	<link rel="stylesheet" href="./flexcard.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+<!---->
+<div class="wrapper">
+<nav class="flex-nav">
+  <ul>
+    <li><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">item1</a></li>
+  <li><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">item2</a></li>
+  <li><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">item3</a></li>
+  <li><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">item4</a></li>
+  <li><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">item5</a></li>
+  <li><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">item6</a></li>
+  <li class="social"><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#"><i class="fa fa-gift"></i></a></li>
+  <li class="social"><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#"><i class=" fa fa-glass"></i></a></li>
+  <li class="social"><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#"><i class=" fa fa-calendar"></i></a></li>
+  <li class="social"><a href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#"><i class=" fa fa-cutlery"></i></a></li>
+  </ul>
+    <div class="example">
+    <div class="example-card">
+    <h3>Whiskey</h3>
+    <h4>single malt</h4>
+    <header><img class="example-image" src="./uc" alt="">
+    </header>
+    <div class="example-text"> Dimorphodon is one of our park’s pterosaurs, or flying reptiles. It evolved to soar through the Jurassic skies, with large eyes, quick jaws and sharp talons perfect for catching fish—or other prey. </div>
+    <footer>
+      <a class="example-cta" href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">Learn More</a>
+    </footer>
+
+    </div>
+
+  <div class="example-card">
+    <h3>Whiskey</h3>
+    <h4>single malt</h4>
+    <header><img class="example-image" src="./uc(1)" alt="">
+    </header>
+    <div class="example-text"> Dimorphodon is one of our park’s pterosaurs, or flying reptiles. It evolved to soar through the Jurassic skies, with large eyes, quick jaws and sharp talons perfect for catching fish—or other prey. </div>
+    <footer>
+      <a class="example-cta" href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">Learn More</a>
+    </footer>
+
+    </div>
+  <div class="example-card">
+    <h3>Whiskey</h3>
+    <h4>single malt</h4>
+    <header><img class="example-image" src="./uc(2)" alt="">
+    </header>
+    <div class="example-text"> Dimorphodon is one of our park’s pterosaurs, or flying reptiles. It evolved to soar through the Jurassic skies, with large eyes, quick jaws and sharp talons perfect for catching fish—or other prey. </div>
+    <footer>
+      <a class="example-cta" href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">Learn More</a>
+    </footer>
+
+    </div>
+  <div class="example-card">
+    <h3>Whiskey</h3>
+    <h4>single malt</h4>
+    <header><img class="example-image" src="./uc(3)" alt="">
+    </header>
+    <div class="example-text"> Dimorphodon is one of our park’s pterosaurs, or flying reptiles. It evolved to soar through the Jurassic skies, with large eyes, quick jaws and sharp talons perfect for catching fish—or other prey. </div>
+    <footer>
+      <a class="example-cta" href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">Learn More</a>
+    </footer>
+
+    </div>
+  <div class="example-card">
+    <h3>Whiskey</h3>
+    <h4>single malt</h4>
+    <header><img class="example-image" src="./uc(4)" alt="">
+    </header>
+    <div class="example-text"> Dimorphodon is one of our park’s pterosaurs, or flying reptiles. It evolved to soar through the Jurassic skies, with large eyes, quick jaws and sharp talons perfect for catching fish—or other prey. </div>
+    <footer>
+      <a class="example-cta" href="http://s.codepen.io/boomerang/23cddc65c293a41778dca7ec4cd4abc11477244288482/index.html#">Learn More</a>
+    </footer>
+
+    </div>
+  </div>
+
+  </nav>
+</div>
+
+</body></html>
