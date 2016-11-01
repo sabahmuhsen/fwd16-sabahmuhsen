@@ -1,0 +1,101 @@
+  @import "landintstyle"; 
+   body {
+  background-image: url(../images/whiskybackg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+nav{
+display: none;
+  ul{
+    background-color: rgba(000, 000, 000, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type:none;
+  }
+
+  ul li{
+    box-sizing: border-box;
+    flex: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  .social{flex:25%;
+
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#nav-toggle{
+  display:none;
+
+&:checked ~nav{
+  display:block;
+}
+}
+.flex-container{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.flex-card{
+  flex: 100%;
+width: auto;
+  background: rgba(60, 179, 113, 0.5);
+  margin: 20px;height:420px;
+}
+.example-cta {background-color: yellow;
+padding:20px;margin:20px;
+}
+
+/* Medium  */
+@media(min-width:500px){
+  nav{
+    display: block;
+
+    li{
+      flex: 1 1 50%;
+/* eller flex:50%;*/
+    }
+
+  }
+  .fa-bars{
+    display: none !important;
+  }
+  .flex-card{
+    flex: 40%;
+  }
+}
+nav ul .social {
+  flex: 1 1 25%;
+  order: -1;
+  font-size: 1.5em;
+}
+
+/*  Large */
+@media(min-width:1000px){
+
+  nav ul li
+  {
+    flex: 3;
+  }
+
+  nav ul .social {
+  
+  order: 1;
+  flex: 1;
+
+}
+  
+  } 
+

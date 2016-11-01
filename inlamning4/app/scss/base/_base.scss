@@ -1,0 +1,16 @@
+// Modern border-box applied everywhere.
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Mandatory select styling.
+::selection {
+  color: map-get($color, bright);
+  background: map-get($color, accent1);
+}
